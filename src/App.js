@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import Figure from './Components/Figure';
 import WrongLetters from './Components/WrongLetters';
 import Word from './Components/Word';
+import Popup from './Components/Popup';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Figure />
       <WrongLetters />
       <Word />
+      <Popup />
       </div>
     </>
   );
