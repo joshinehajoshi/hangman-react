@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Word() {
+function Word({selectedWord, correctLetters}) {
     return (
         <>
             <div class="word" id="word"></div>
