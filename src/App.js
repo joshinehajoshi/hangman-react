@@ -16,8 +16,8 @@ const wrongLetters = [];
 
 function App() {
   const [playable, setPlayable] = useState(true);
-  const [correctLetters, setCorrectLetters] = sueState([]);
-  const [wrongLetters, setWrongLetters] = sueState([]);
+  const [correctLetters, setCorrectLetters] = useState([]);
+  const [wrongLetters, setWrongLetters] = useState([]);
 
   return (
     <>
