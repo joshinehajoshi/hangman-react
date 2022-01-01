@@ -31,14 +31,14 @@ function App() {
     
           if (selectedWord.includes(letter)) {
             if (!correctLetters.includes(letter)) {
-              setCorrectLetters(currentLetters => [... currentLetters, letter])
+              setCorrectLetters(currentLetters => [...currentLetters, letter])
     
             } else {
               show(setShowNotification)
             }
           } else {
             if (!wrongLetters.includes(letter)) {
-              setWrongLetters(currentLetters => [... currentLetters, letter])
+              setWrongLetters(currentLetters => [...currentLetters, letter])
     
             } else {
               show(setShowNotification)
@@ -60,9 +60,8 @@ function App() {
       <Figure wrongLetters={wrongLetters}/>
       <WrongLetters wrongLetters={wrongLetters} />
       <Word selectedWord={selectedWord} correctLetters={correctLetters} />
-     
       </div>
-      <Popup />
+      <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable}/>
       <Notification  showNotification={showNotification}/>
     </>
   );
